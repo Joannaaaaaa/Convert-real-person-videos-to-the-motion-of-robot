@@ -35,3 +35,9 @@ run train.py:
 python train.py --dataset facades
 ```
 
+run different epoch:
+```
+python train.py --dataset --epoch_count {# of epoch}
+```
+
+
