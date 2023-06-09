@@ -27,3 +27,6 @@ run predict_visualize.py (need to create file named: plot_img and plot_result)
     - annotations  
 
 # Image to Image
+install required package
+run train.py
+
