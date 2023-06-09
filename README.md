@@ -15,11 +15,16 @@ https://cocodataset.org/#download
 
 # Keypoint Detection
 install require package  
-run train.py: 
 
+run train.py: 
 ```
 python train.py
 ```
+VideotoImage.py
+```
+python VideotoImage.py
+```
+
 run predict_visualize.py (need to create file named: plot_img and plot_result)   
 ```
 python predict_visualize.py
