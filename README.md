@@ -32,12 +32,17 @@ install required package
 run train.py:
 
 ```
-python train.py --dataset facades
+python train.py --dataset facades --cuda
 ```
 
 run different epoch:
 ```
-python train.py --dataset --epoch_count {# of epoch}
+python train.py --dataset facades --epoch_count {# of epoch} --cuda
+```
+
+run test.py:
+```
+python test.py --dataset facades --cuda
 ```
 
 
