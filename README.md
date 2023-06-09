@@ -13,7 +13,7 @@ image to image: [Image-to-Image Translation with Conditional Adversarial Network
 COCO2017  
 https://cocodataset.org/#download
 
-## Keypoint Detection
+# Keypoint Detection
 install require package  
 
 run train.py: 
@@ -43,7 +43,7 @@ python predict_visualize.py
 <img src="https://github.com/Joannaaaaaa/Synthesizing-Dynamic-Movements-for-Non-Experts/assets/98182630/ecebcef6-460c-4908-bdd4-00eb17720ca0" width="500">
 <img src="https://github.com/Joannaaaaaa/Synthesizing-Dynamic-Movements-for-Non-Experts/assets/98182630/96283f18-9a88-471d-8c97-34e64bb42f2d" width="500">
 
-## Image to Image
+# Image to Image
 install required package
 
 run train.py:
@@ -63,5 +63,7 @@ python test.py --dataset facades --cuda
 ```
 
 results are stored in "result" folder
+
+## result
 
 
