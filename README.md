@@ -44,7 +44,7 @@ result:
 ![1](https://github.com/Joannaaaaaa/Synthesizing-Dynamic-Movements-for-Non-Experts/assets/98182630/96283f18-9a88-471d-8c97-34e64bb42f2d)
  -->
 <img src="https://github.com/Joannaaaaaa/Synthesizing-Dynamic-Movements-for-Non-Experts/assets/98182630/ecebcef6-460c-4908-bdd4-00eb17720ca0" width="500">
-<img src="https://github.com/Joannaaaaaa/Synthesizing-Dynamic-Movements-for-Non-Experts/assets/98182630/96283f18-9a88-471d-8c97-34e64bb42f2d" width="100">
+<img src="https://github.com/Joannaaaaaa/Synthesizing-Dynamic-Movements-for-Non-Experts/assets/98182630/96283f18-9a88-471d-8c97-34e64bb42f2d" width="500">
 
 # Image to Image
 install required package
