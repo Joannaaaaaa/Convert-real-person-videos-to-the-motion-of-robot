@@ -3,10 +3,10 @@ NYCU 2023 AI Final Project
 
 ## Environment
 Python version==3.6  
-opencv-python 4.6.0.66  
-numpy 1.22.4  
-pyorch 1.7.1  
-torchvision 0.8.2
+opencv-python==4.6.0.66  
+numpy==1.22.4  
+pyorch==1.7.1  
+torchvision==0.8.2
 
 ## Introduction
 Developing an AI model to convert human motion to skeleton and generate an image of another human performing the same motion.
