@@ -1,6 +1,9 @@
 # Synthesizing Dynamic Movements for Non-Experts
 NYCU 2023 AI Final Project
 
+## Environment
+Python version==3.6
+
 ## Introduction
 Developing an AI model to convert human motion to skeleton and generate an image of another human performing the same motion.
 
