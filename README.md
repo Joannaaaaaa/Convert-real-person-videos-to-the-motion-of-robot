@@ -17,8 +17,13 @@ https://cocodataset.org/#download
 install require package  
 run train.py  
 run predict_visualize.py (need to create file named: plot_img and plot_result)   
-* 
-* [test]  
-    * -[dd]
+
+*plot_result
+* data  
+    * plot_img
+    * COCO2017
+      *train2017
+      *val2017
+      *annotations
 
 # Image to Image
