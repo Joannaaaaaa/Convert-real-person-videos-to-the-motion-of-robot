@@ -65,5 +65,5 @@ python test.py --dataset facades --cuda
 results are stored in "result" folder
 
 ## result
-
+<img src="https://github.com/navis0721/image/blob/main/688_a.jpg">
 
