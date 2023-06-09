@@ -18,7 +18,7 @@ install require package
 run train.py  
 run predict_visualize.py (need to create file named: plot_img and plot_result)   
 
--plot_result
+- plot_result
 - data  
   - plot_img  
   - COCO2017  
