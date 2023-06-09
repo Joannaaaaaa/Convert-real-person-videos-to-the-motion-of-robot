@@ -40,11 +40,10 @@ python predict_visualize.py
     - annotations  
 
 result:
-<!-- ![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100) -->
-![](https://github.com/Joannaaaaaa/Synthesizing-Dynamic-Movements-for-Non-Experts/assets/98182630/ecebcef6-460c-4908-bdd4-00eb17720ca0 | width=100)
+![1](https://github.com/Joannaaaaaa/Synthesizing-Dynamic-Movements-for-Non-Experts/assets/98182630/ecebcef6-460c-4908-bdd4-00eb17720ca0 | width=100)
 ![1](https://github.com/Joannaaaaaa/Synthesizing-Dynamic-Movements-for-Non-Experts/assets/98182630/96283f18-9a88-471d-8c97-34e64bb42f2d)
 
-
+<img src="https://github.com/Joannaaaaaa/Synthesizing-Dynamic-Movements-for-Non-Experts/assets/98182630/ecebcef6-460c-4908-bdd4-00eb17720ca0" width="100" height="100">
 # Image to Image
 install required package
 
