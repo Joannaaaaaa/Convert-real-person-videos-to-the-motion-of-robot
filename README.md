@@ -18,6 +18,6 @@ install require package
 run train.py  
 run predict_visualize.py (need to create file named: plot_img and plot_result)   
 -[test]  
-    -[dd]
+    ..-[dd]
 
 # Image to Image
