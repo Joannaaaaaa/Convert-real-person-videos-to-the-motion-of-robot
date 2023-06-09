@@ -29,7 +29,9 @@ run predict_visualize.py (need to create file named: plot_img and plot_result)
 # Image to Image
 install required package
 
-run train.py
-、、、
+run train.py:
+
+```
 python train.py --dataset facades
+```
 
