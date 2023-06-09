@@ -45,4 +45,6 @@ run test.py:
 python test.py --dataset facades --cuda
 ```
 
+results are stored in "result" folder
+
 
