@@ -3,7 +3,7 @@ NYCU 2023 AI Final Project
 
 ## Environment
 Python version==3.6  
-opencv-python 4.6.0.66. 
+opencv-python 4.6.0.66  
 numpy 1.22.4. 
 
 ## Introduction
