@@ -5,7 +5,7 @@ NYCU 2023 AI Final Project
 Python version==3.6  
 opencv-python 4.6.0.66  
 numpy 1.22.4  
-pyorch 1.7.1
+pyorch 1.7.1  
 torchvision 0.8.2
 
 ## Introduction
