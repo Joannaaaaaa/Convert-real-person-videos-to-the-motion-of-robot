@@ -5,7 +5,6 @@ import numpy as np
 import copy
 import time
 import torch
-# import torch._six
 int_classes = int
 string_classes = str
 
@@ -194,17 +193,9 @@ def create_common_coco_eval(coco_eval, img_ids, eval_imgs):
     coco_eval._paramsEval = copy.deepcopy(coco_eval.params)
 
 
-#################################################################
-# From pycocotools, just removed the prints and fixed
-# a Python3 bug about unicode not defined
-#################################################################
-
-# Ideally, pycocotools wouldn't have hard-coded prints
-# so that we could avoid copy-pasting those two functions
-
 def createIndex(self):
     # create index
-    # print('creating index...')
+    print('creating index...')
     anns, cats, imgs = {}, {}, {}
     imgToAnns, catToImgs = defaultdict(list), defaultdict(list)
     if 'annotations' in self.dataset:
@@ -224,7 +215,7 @@ def createIndex(self):
         for ann in self.dataset['annotations']:
             catToImgs[ann['category_id']].append(ann['image_id'])
 
-    # print('index created!')
+    print('index created!')
 
     # create class members
     self.anns = anns
@@ -246,8 +237,7 @@ def loadRes(self, resFile):
     res = COCO()
     res.dataset['images'] = [img for img in self.dataset['images']]
 
-    # print('Loading and preparing results...')
-    # tic = time.time()
+    print('Loading and preparing results...')
     if isinstance(resFile, string_classes):
         anns = json.load(open(resFile))
     elif type(resFile) == np.ndarray:
@@ -276,7 +266,6 @@ def loadRes(self, resFile):
     elif 'segmentation' in anns[0]:
         res.dataset['categories'] = copy.deepcopy(self.dataset['categories'])
         for id, ann in enumerate(anns):
-            # now only support compressed RLE format as segmentation results
             ann['area'] = maskUtils.area(ann['segmentation'])
             if 'bbox' not in ann:
                 ann['bbox'] = maskUtils.toBbox(ann['segmentation'])
@@ -292,7 +281,6 @@ def loadRes(self, resFile):
             ann['area'] = (x1 - x0) * (y1 - y0)
             ann['id'] = id + 1
             ann['bbox'] = [x0, y0, x1 - x0, y1 - y0]
-    # print('DONE (t={:0.2f}s)'.format(time.time()- tic))
 
     res.dataset['annotations'] = anns
     createIndex(res)
@@ -300,18 +288,12 @@ def loadRes(self, resFile):
 
 
 def evaluate(self):
-    '''
-    Run per image evaluation on given images and store results (a list of dict) in self.evalImgs
-    :return: None
-    '''
-    # tic = time.time()
-    # print('Running per image evaluation...')
+  
     p = self.params
-    # add backward compatibility if useSegm is specified in params
     if p.useSegm is not None:
         p.iouType = 'segm' if p.useSegm == 1 else 'bbox'
         print('useSegm (deprecated) is not None. Running {} evaluation'.format(p.iouType))
-    # print('Evaluate annotation type *{}*'.format(p.iouType))
+    print('Evaluate annotation type *{}*'.format(p.iouType))
     p.imgIds = list(np.unique(p.imgIds))
     if p.useCats:
         p.catIds = list(np.unique(p.catIds))
@@ -319,7 +301,6 @@ def evaluate(self):
     self.params = p
 
     self._prepare()
-    # loop through images, area range, max detection number
     catIds = p.catIds if p.useCats else [-1]
 
     if p.iouType == 'segm' or p.iouType == 'bbox':
@@ -339,13 +320,7 @@ def evaluate(self):
         for areaRng in p.areaRng
         for imgId in p.imgIds
     ]
-    # this is NOT in the pycocotools code, but could be done outside
     evalImgs = np.asarray(evalImgs).reshape(len(catIds), len(p.areaRng), len(p.imgIds))
     self._paramsEval = copy.deepcopy(self.params)
-    # toc = time.time()
-    # print('DONE (t={:0.2f}s).'.format(toc-tic))
     return p.imgIds, evalImgs
 
-#################################################################
-# end of straight copy from pycocotools, just removing the prints
-#################################################################
