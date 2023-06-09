@@ -1,1 +1,1 @@
-## Download the video you want to transfer,
+## Download the video you want to transfer
