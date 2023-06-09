@@ -22,7 +22,7 @@ python train.py
 ```
 run predict_visualize.py (need to create file named: plot_img and plot_result)   
 ```
-python train.py
+python predict_visualize.py
 ```
 
 - plot_result
