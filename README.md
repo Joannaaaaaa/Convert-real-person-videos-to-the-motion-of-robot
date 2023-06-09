@@ -31,14 +31,6 @@ run predict_visualize.py: produce dataset of Image2Image (target_A)
 python predict_visualize.py
 ```
 
-- plot_result
-- data  
-  - plot_img  
-  - COCO2017  
-    - train2017  
-    - val2017  
-    - annotations  
-
 ## result:  
 <img src="https://github.com/Joannaaaaaa/Synthesizing-Dynamic-Movements-for-Non-Experts/assets/98182630/ecebcef6-460c-4908-bdd4-00eb17720ca0" width="500">
 <img src="https://github.com/Joannaaaaaa/Synthesizing-Dynamic-Movements-for-Non-Experts/assets/98182630/96283f18-9a88-471d-8c97-34e64bb42f2d" width="500" heigh="300">
