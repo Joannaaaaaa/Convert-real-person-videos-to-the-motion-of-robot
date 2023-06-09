@@ -27,7 +27,7 @@ def get_model(train_weight=None):
     return model
 
 def main():
-    device = torch.device('cuda', 8) #use gpu first gpu to train
+    device = torch.device('cuda', 0) #use gpu first gpu to train
     torch.cuda.set_device(device)
 
     # Data loading code
