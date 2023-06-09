@@ -20,12 +20,13 @@ run train.py:
 ```
 python train.py
 ```
-VideotoImage.py
+VideotoImage.py: get the dataset of Image2Image (B)
 ```
 python VideotoImage.py
 ```
 
-run predict_visualize.py (need to create file named: plot_img and plot_result)   
+run predict_visualize.py: get the dataset of Image2Image (A)
+(need to create file named: plot_img and plot_result) 
 ```
 python predict_visualize.py
 ```
