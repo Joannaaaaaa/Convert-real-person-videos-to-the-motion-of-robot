@@ -1,3 +1,5 @@
+https://www.canva.com/design/DAFkszwoEXk/dBzhb_tvcdjmM0vsQz-7cA/edit
+
 # Synthesizing Dynamic Movements for Non-Experts
 NYCU 2023 AI Final Project
 
