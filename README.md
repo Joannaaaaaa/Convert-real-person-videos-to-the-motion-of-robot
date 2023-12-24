@@ -1,4 +1,4 @@
-https://www.canva.com/design/DAFkszwoEXk/dBzhb_tvcdjmM0vsQz-7cA/edit
+[SLIDE](https://www.canva.com/design/DAFkszwoEXk/BSxdJLqi97SKHgys1w_0Sg/view?utm_content=DAFkszwoEXk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 # Synthesizing Dynamic Movements for Non-Experts
 NYCU 2023 AI Final Project
